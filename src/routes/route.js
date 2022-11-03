@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-const userControl=require("../controllers/userController")
-const topicControl=require('../controllers/topicController')
-const md=require('../middelware/auth')
+const userControl=require("../controller/userController")
+const topicControl=require('../controller/rankController')
+const md=require("../middelware/auth")
 //Userlogin 
 router.post("/login",userControl.loginUser)
 //UserRegister
